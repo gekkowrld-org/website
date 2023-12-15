@@ -10,51 +10,23 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 function NavList() {
 	return (
 		<ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-			<Typography
-				as="li"
-				variant="small"
-				className="p-1 font-medium"
-			>
-				<a
-					href="/about"
-					className="flex items-center"
-				>
+			<Typography as="li" variant="small" className="p-1 font-medium">
+				<a href="/about" className="flex items-center">
 					About
 				</a>
 			</Typography>
-			<Typography
-				as="li"
-				variant="small"
-				className="p-1 font-medium"
-			>
-				<a
-					href="/team"
-					className="flex items-center"
-				>
+			<Typography as="li" variant="small" className="p-1 font-medium">
+				<a href="/team" className="flex items-center">
 					Team
 				</a>
 			</Typography>
-			<Typography
-				as="li"
-				variant="small"
-				className="p-1 font-medium"
-			>
-				<a
-					href="/resources"
-					className="flex items-center"
-				>
+			<Typography as="li" variant="small" className="p-1 font-medium">
+				<a href="/resources" className="flex items-center">
 					Resources
 				</a>
 			</Typography>
-			<Typography
-				as="li"
-				variant="small"
-				className="p-1 font-medium"
-			>
-				<a
-					href="/repositories"
-					className="flex items-center"
-				>
+			<Typography as="li" variant="small" className="p-1 font-medium">
+				<a href="/repositories" className="flex items-center">
 					Repositories
 				</a>
 			</Typography>
@@ -77,7 +49,7 @@ export default function Header() {
 	}, []);
 
 	return (
-		<Navbar className="mx-auto max-w-screen-xl px-6 py-3">
+		<Navbar className="mx-auto max-w-screen-xl px-6 py-3 top_navbar">
 			<div className="flex items-center justify-between">
 				<Typography
 					as="a"
