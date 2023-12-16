@@ -1,0 +1,65 @@
+/* Import fonts from Google */
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&family=Lato&family=Montserrat:wght@700&family=Open+Sans&family=Raleway&family=Roboto:wght@700&family=Source+Sans+3&display=swap");
+
+/* Define variables */
+:root {
+	/* Colors */
+	--wicode-blue: #1a0349;
+	--wicode-blue-light: #3d9ea4;
+	--wicode-grey: #4f4f51;
+	--wicode-grey-light: #8f8f90;
+	--wicode-white: #ffffff;
+	--wicode-black: #000000;
+	--wicode-a-link: #683924;
+
+	/* Fonts */
+	--wicode-font-primary: "Open Sans", sans-serif;
+	--wicode-font-secondary: "Lato", sans-serif;
+	--wicode-header-font-primary: "Montserrat", sans-serif;
+	--wicode-header-font-secondary: "Roboto", sans-serif;
+	--wicode-code-font: "Inconsolata", monospace;
+	--wicode-navigation-font-primary: "Source Sans 3", sans-serif;
+	--wicode-navigation-font-secondary: "Raleway", sans-serif;
+}
+
+/* Global styles */
+html {
+	font-family: var(--wicode-font-primary);
+	color: var(--wicode-white);
+	background: var(--wicode-grey);
+}
+
+a,
+a:visited,
+a:active,
+a:focus,
+a:link {
+	color: var(--wicode-a-link);
+	cursor: pointer;
+	font-family: var(--wicode-header-font-primary);
+	transition-property: color, background-color, border-color,
+		text-decoration-color, fill, stroke;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 150ms;
+}
+
+a:hover {
+	color: var(--wicode-blue-light);
+	text-decoration: underline;
+}
+
+p {
+	font-family: var(--wicode-font-primary);
+	font-size: 1rem;
+	line-height: 1.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--wicode-header-font-primary);
+	color: var(--wicode-blue);
+}

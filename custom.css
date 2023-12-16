@@ -1,0 +1,24 @@
+nav.top_navbar {
+	background: var(--wicode-grey-light);
+	border: none;
+}
+
+div.not_found_card {
+	background-color: var(--wicode-grey-light);
+}
+
+/* Wait for the browsers to implement the has selector
+ * for it to work.
+ * I'm talking about you Firefox.
+ * https://developer.mozilla.org/en-US/docs/Web/CSS/:has
+ */
+html:has(div) {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url("404.png");
+}
+
+.url_404 {
+	color: var(--wicode-grey);
+	font-family: var(--wicode-navigation-font-primary);
+}
